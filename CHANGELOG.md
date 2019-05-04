@@ -1,6 +1,7 @@
 Version 248-hf1:
 
 * Add idle ping suspend test
+* Fix moved-from executor in idle ping timeout
 
 --------------------------------------------------------------------------------
 
