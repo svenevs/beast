@@ -1,3 +1,9 @@
+Version 248-hf1:
+
+* Add idle ping suspend test
+
+--------------------------------------------------------------------------------
+
 Version 248:
 
 * Don't use a moved-from handler
