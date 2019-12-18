@@ -41,14 +41,14 @@ matrix:
         - mkdir tmp && cd tmp
         - git clone -b 'Release_1_8_15' --depth 1 https://github.com/doxygen/doxygen.git
         - cd doxygen
-        - make -H. -Bbuild -DCMAKE_BUILD_TYPE=Release
+        - cmake -H. -Bbuild -DCMAKE_BUILD_TYPE=Release
         - cd build
-        - make install
+        - sudo make install
         - cd ../..
         - wget -O saxonhe.zip https://sourceforge.net/projects/saxon/files/Saxon-HE/9.9/SaxonHE9-9-1-4J.zip/download
         - unzip saxonhe.zip
-        - rm /usr/share/java/Saxon-HE.jar
-        - cp saxon9he.jar /usr/share/java/Saxon-HE.jar
+        - sudo rm /usr/share/java/Saxon-HE.jar
+        - sudo cp saxon9he.jar /usr/share/java/Saxon-HE.jar
         - cd ..
         - BOOST_BRANCH=develop && [ "$TRAVIS_BRANCH" == "master" ] && BOOST_BRANCH=master || true
         - git clone -b $BOOST_BRANCH https://github.com/boostorg/boost.git boost-root
