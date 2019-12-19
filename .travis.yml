@@ -34,6 +34,7 @@ matrix:
             - docbook
             - docbook-xml
             - docbook-xsl
+            - xsltproc
             - libsaxonhe-java
             - default-jre-headless
       install:
