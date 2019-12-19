@@ -62,7 +62,7 @@ matrix:
         - ./b2 headers
       script:
         - |-
-          echo "using doxygen ;" > ~/user-config.jam
+          echo "using doxygen ; using boostbook ; using saxonhe ;" > ~/user-config.jam
         - ./b2 -j3 libs/beast/doc//boostrelease
 
     # GCC 6.0, Debug + Coverage
