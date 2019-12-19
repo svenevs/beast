@@ -56,6 +56,7 @@ matrix:
         - cd boost-root
         - git submodule update --init tools/boostdep
         - git submodule update --init tools/quickbook
+        - git submodule update --init tools/boostbook
         - git submodule update --init libs/context
         - cp -r $TRAVIS_BUILD_DIR/* libs/beast
         - python tools/boostdep/depinst/depinst.py ../tools/quickbook
