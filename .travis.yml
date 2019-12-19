@@ -60,7 +60,7 @@ matrix:
         - ./bootstrap.sh
         - ./b2 headers
       script:
-        - b2 -j3 libs/beast/doc//boostrelease
+        - ./b2 -j3 libs/beast/doc//boostrelease
 
     # GCC 6.0, Debug + Coverage
     - os: linux
