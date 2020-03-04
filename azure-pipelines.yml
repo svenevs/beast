@@ -271,10 +271,14 @@ stages:
           B2_CXXSTD: 11,14,17
           XCODE_APP: /Applications/Xcode_9.4.1.app
     steps:
+    # TODO remove
+    - bash: |
+        brew install openssl
+      displayName: Get OpenSSL
+    # end remove
     - bash: |
         set -e
         uname -a
-        ls -al /Applications | grep -i Xcode
         sudo xcode-select -switch ${XCODE_APP}
         which clang++
 
