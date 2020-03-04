@@ -278,6 +278,7 @@ stages:
     - bash: |
         set -e
         uname -a
+        ls -al /Applications | grep -i Xcode
         sudo xcode-select -switch ${XCODE_APP}
         which clang++
 
